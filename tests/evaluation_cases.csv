@@ -1,0 +1,17 @@
+case_id,question,answerable,expected_policy,expected_fact,focus
+S01,Can I work from another country for two months?,yes,Work From Abroad Policy,Work abroad maximum 30 days with approval; two months exceeds this limit.,Paraphrase + numerical limit
+S02,Do I need permission to spend $750 on company expenses?,yes,Expense Approval Policy,Expenses over $500 require prior approval from Finance.,Approval threshold
+S03,How often must I change my password?,yes,Password Policy,Passwords must be changed every 90 days and meet complexity requirements.,Exact rule
+S04,How many vacation days do employees receive each year?,yes,Vacation Policy,Employees receive 15 vacation days per year.,HR entitlement
+S05,Can I work from home four days every week without approval?,yes,Remote Work Policy,Remote work is permitted up to three days per week with manager approval; four days without approval is not supported.,Paraphrase + limit
+S06,How long is paid parental leave for eligible staff?,yes,Parental Leave Policy,Eligible employees may take up to 12 weeks of paid parental leave.,HR entitlement
+S07,When do I have to submit my receipts after a business trip?,yes,Travel Reimbursement Policy,Employees must submit travel expense receipts within 30 days.,Deadline
+S08,Who needs to review a contract before I sign it?,yes,Contract Review Policy,Contracts must be reviewed by Legal before signing.,Department responsibility
+U01,Will the company pay for my gym membership?,no,None,No policy specifies gym membership reimbursement.,Unsupported: completely absent
+U02,Is parking at the office free for employees?,no,None,Parking Policy concerns space assignment; parking fees or free parking are not specified.,Unsupported: related policy lacks detail
+U03,What is the maximum number of vacation days I can roll over?,no,None,Vacation Policy allows unused days to roll over but gives no maximum number.,Unsupported: missing numeric limit
+U04,What is the name of the VPN product employees must use?,no,None,Remote Access Policy requires secure VPN connections but names no VPN vendor or product.,Unsupported: missing vendor
+U05,Exactly how much money can employees get reimbursed for external training?,no,None,Training Reimbursement Policy permits approved external training reimbursement but states no amount.,Unsupported: missing amount
+U06,How many hours of sick leave accrue per month?,no,None,Sick Leave Policy states accrual occurs monthly but does not specify the number of hours.,Unsupported: missing accrual rate
+U07,Does the company pay employees double for working on Sundays?,no,None,The policy database does not specify overtime or Sunday premium rates.,Unsupported: absent compensation rule
+U08,Does the company pay a fixed monthly allowance for a home office?,no,None,Home Office Equipment Policy permits requests for ergonomic equipment but states no fixed monthly allowance.,Unsupported: related policy lacks detail

@@ -1,0 +1,49 @@
+case_id,method,recognises_missing_information,clear_invented_policy_fact,review_note
+S01,Rules-Based,n/a,no,
+S01,LLM (No Vectors),n/a,no,
+S01,LLM + RAG,n/a,no,Identifies 30-day limit but unnecessarily says two-month eligibility is unspecified.
+S02,Rules-Based,n/a,no,
+S02,LLM (No Vectors),n/a,no,
+S02,LLM + RAG,n/a,no,
+S03,Rules-Based,n/a,no,
+S03,LLM (No Vectors),n/a,no,
+S03,LLM + RAG,n/a,no,
+S04,Rules-Based,n/a,no,
+S04,LLM (No Vectors),n/a,no,
+S04,LLM + RAG,n/a,no,
+S05,Rules-Based,n/a,no,
+S05,LLM (No Vectors),n/a,no,
+S05,LLM + RAG,n/a,no,"Includes 3-day/approval rule, but hedges when applying it to four days without approval."
+S06,Rules-Based,n/a,no,
+S06,LLM (No Vectors),n/a,no,
+S06,LLM + RAG,n/a,no,
+S07,Rules-Based,n/a,no,Returns Business Continuity Policy instead of Travel Reimbursement Policy.
+S07,LLM (No Vectors),n/a,no,
+S07,LLM + RAG,n/a,no,
+S08,Rules-Based,n/a,no,
+S08,LLM (No Vectors),n/a,no,
+S08,LLM + RAG,n/a,no,
+U01,Rules-Based,yes,no,Reports no matching policy; correctly avoids implying gym reimbursement is defined.
+U01,LLM (No Vectors),yes,no,
+U01,LLM + RAG,yes,no,
+U02,Rules-Based,no,no,"Returns Parking Policy, which does not say whether parking is free."
+U02,LLM (No Vectors),yes,no,
+U02,LLM + RAG,yes,no,
+U03,Rules-Based,no,no,"Returns Vacation Policy, but its roll-over statement does not specify a maximum."
+U03,LLM (No Vectors),no,no,Mentions rollover but does not state that the requested maximum is unspecified.
+U03,LLM + RAG,yes,no,
+U04,Rules-Based,no,no,Returns VPN requirement but does not acknowledge missing VPN product name.
+U04,LLM (No Vectors),yes,no,
+U04,LLM + RAG,yes,no,
+U05,Rules-Based,no,no,Returns eligibility for training reimbursement but not the requested amount.
+U05,LLM (No Vectors),yes,no,
+U05,LLM + RAG,yes,no,
+U06,Rules-Based,no,no,Returns monthly accrual statement without acknowledging missing hours.
+U06,LLM (No Vectors),no,no,Returns monthly accrual statement without acknowledging missing hours.
+U06,LLM + RAG,yes,no,
+U07,Rules-Based,no,no,Irrelevant Performance Review Policy; does not address Sunday premium.
+U07,LLM (No Vectors),yes,no,
+U07,LLM + RAG,yes,no,
+U08,Rules-Based,no,no,Returns equipment policy instead of acknowledging absent home-office allowance.
+U08,LLM (No Vectors),yes,no,
+U08,LLM + RAG,yes,no,
